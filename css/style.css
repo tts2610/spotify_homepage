@@ -4,15 +4,17 @@ body {
 }
 
 nav {
-    height: 60px;
-    background-color: rgba(0, 0, 0, 0.5);
+    height: 80px;
+    background-color: rgba(0, 0, 0, 0.6);
     position: fixed;
     width: 100%;
+    top: 0px;
 }
 
 .spotify-logo {
     width: 132px;
     height: 41.88px;
+    margin: 15px;
 }
 
 footer {
@@ -29,28 +31,35 @@ footer {
     max-width: 1170px;
 }
 
-.logo {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.container .nav-item {
+.container>ul {
     flex: 1;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: flex-end;
 }
 
-nav .nav-item ul {
+ul>li {
     list-style: none;
     margin-right: 15px;
 }
 
-nav .nav-item a {
+ul>li>a {
     text-decoration: none;
+    padding: 28px 17px;
+    display: block;
     font-weight: 700;
+}
+
+ul>li>a:hover {
+    color: #1ed760;
+}
+
+.primary {
     color: #fff;
+}
+
+.secondary {
+    color: #d9dadc;
 }
 
 section {
@@ -60,10 +69,55 @@ section {
     background: -webkit-gradient( linear, left top, left bottom, color-stop(-60%, #f037a5), color-stop(140%, #fae62d));
 }
 
+section .covid-music-relief-container {
+    height: 205px;
+    background-color: #FFF;
+}
+
+.covid-music-relief-container .covid-music-relief__heading {
+    font-size: 24px;
+    color: #2D46B9;
+    font-weight: 700;
+    padding-top: 92px;
+    margin-left: 65px;
+}
+
+.covid-music-relief-container .covid-music-relief__tag {
+    font-size: 18px;
+    line-height: 24px;
+    color: #000;
+    margin-bottom: unset;
+    font-weight: normal;
+    margin-left: 65px;
+}
+
+.covid-music-relief-container .covid-music-relief__tag a {
+    color: #000;
+    text-decoration: underline;
+}
+
 .hero-img {
     height: 100%;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-image: url("https://www.scdn.co/i/home/hero-burst.svg");
+}
+
+#title {
+    color: white;
+    font-size: 80px;
+    font-weight: 900;
+    line-height: 1.15;
+    text-align: center;
+    margin-bottom: 20px;
+    letter-spacing: -0.04em;
+}
+
+
+/* This selector will make sure that the styling only applies to `.container` inside the `header`. */
+
+section .container {
+    flex-direction: column;
+    justify-content: center;
 }
