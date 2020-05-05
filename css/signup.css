@@ -1,0 +1,16 @@
+/* HEADER */
+
+nav .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo img {
+    width: 197px;
+    height: 59px;
+    padding: 1.5em 0;
+}
+
+
+/* DONE HEADER */
