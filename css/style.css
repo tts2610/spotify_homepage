@@ -31,6 +31,10 @@ footer {
     max-width: 1170px;
 }
 
+.content {
+    height: 596px;
+}
+
 .container>ul {
     flex: 1;
     display: flex;
@@ -110,14 +114,154 @@ section .covid-music-relief-container {
     font-weight: 900;
     line-height: 1.15;
     text-align: center;
-    margin-bottom: 20px;
-    letter-spacing: -0.04em;
+    margin-bottom: 10px;
 }
 
+#subtitle {
+    color: white;
+    font-size: 18px;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 10px;
+}
 
-/* This selector will make sure that the styling only applies to `.container` inside the `header`. */
+.btn-spotify {
+    border: 0px;
+    width: 260px;
+    color: white;
+    margin: 0 auto;
+    line-height: 1;
+    font-size: 14px;
+    margin-top: 16px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    border-radius: 500px;
+    padding: 18px 42px 18px;
+    background-color: #1db954;
+    text-transform: uppercase;
+    transition-duration: 0.3s;
+}
+
+.btn-spotify:hover {
+    cursor: pointer;
+    background-color: #1ed760;
+}
 
 section .container {
     flex-direction: column;
     justify-content: center;
+}
+
+.column>h1 {
+    color: #919496;
+    font-size: 13.5px;
+}
+
+.column p {
+    margin-bottom: 15px;
+    color: white;
+}
+
+.footer-logo {
+    display: flex;
+}
+
+.footer-logo>h1 {
+    color: white;
+    font-size: 2em;
+    margin-left: 15px;
+    margin-bottom: 15px;
+}
+
+.footer-icons {
+    flex: 3;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-icons>.fab {
+    margin: 15px;
+}
+
+.footer-icons>.fab:hover {
+    color: green;
+}
+
+.footer {
+    display: flex;
+    padding: 20px;
+}
+
+footer .footer-container {
+    height: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+    max-width: 1170px;
+}
+
+.upper-nav {
+    display: flex;
+}
+
+.footer-container .upper-nav .column {
+    justify-content: flex-end;
+    margin-right: 60px;
+    margin-top: 100px;
+}
+
+.lower-nav {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.lower-nav .flag {
+    height: 18px;
+}
+
+.lower-nav a {
+    color: #919496;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+.fab {
+    font-size: 50px;
+    color: white;
+}
+
+a:hover {
+    color: green;
+}
+
+.column>p:hover {
+    color: green;
+    cursor: pointer;
+}
+
+.left>p:hover {
+    color: green;
+}
+
+.bottom-links {
+    display: flex;
+}
+
+.bottom-links ul {
+    display: flex;
+    padding-left: 0px;
+}
+
+.bottom-links a {
+    color: #919496;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+.bottom-links .copyright {
+    color: #919496;
+    display: flex;
+    flex-direction: column;
+    margin-left: 523px;
+    justify-content: center;
+    font-size: 12px;
 }
