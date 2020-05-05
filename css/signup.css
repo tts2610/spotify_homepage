@@ -12,22 +12,60 @@ nav .logo {
     margin-top: 10px;
 }
 
+::-webkit-input-placeholder {
+    font-size: 15px!important;
+}
+
+ :-moz-placeholder {
+    /* Firefox 18- */
+    font-size: 15px!important;
+}
+
+ ::-moz-placeholder {
+    /* Firefox 19+ */
+    font-size: 15px!important;
+}
+
 
 /* DONE HEADER */
 
 
 /* BODY */
 
+.form-row {
+    justify-content: space-between;
+}
+
+#inputState {
+    color: gray;
+}
+
 body {
     font-family: Circular, Helvetica, Arial, sans-serif;
 }
 
-section .container {
+form {
+    width: 100%;
+}
+
+form label {
+    color: #868e95;
+}
+
+.box-content {
+    margin: 0 auto;
+    max-width: 26.875em;
+}
+
+section .container .box-content {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
+
+
+/* SUBMIT BUTTON */
 
 .button {
     max-width: 320px;
@@ -44,8 +82,10 @@ section .container {
     vertical-align: middle;
 }
 
-a {
+.button:hover {
+    color: #fff !important;
     text-decoration: none;
+    filter: brightness(1.1);
 }
 
 .button-facebook {
@@ -55,8 +95,76 @@ a {
     margin-bottom: 15px;
 }
 
-.seperator {}
+.button-signup {
+    color: #FFF;
+    background-color: #1DB954;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: center;
+}
 
-h2 {
+
+/* DONE SUBMIT BUTTON */
+
+
+/* CUSTOM SEPERATOR */
+
+.seperator {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.custom {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    width: 40%;
+}
+
+
+/* END CUSTOM SEPERATOR */
+
+.custom-h2 {
     font-size: 18px;
+    font-weight: 800;
+    margin: 0 0 .5em;
+}
+
+
+/* TERM */
+
+.term {
+    font-size: 12px;
+    text-align: center;
+}
+
+.term a {
+    color: #1DB954;
+    text-decoration: none;
+}
+
+.term a:hover {
+    color: #1DB954;
+    filter: brightness(1.1);
+    text-decoration: none;
+}
+
+.primary {
+    font-size: 16px;
+    text-align: center;
+}
+
+.primary a {
+    color: #1DB954;
+    text-decoration: none;
+}
+
+.primary a:hover {
+    color: #1DB954;
+    filter: brightness(1.1);
+    text-decoration: none;
 }
