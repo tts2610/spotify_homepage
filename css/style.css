@@ -1,0 +1,69 @@
+body {
+    margin: 0;
+    font-family: Circular, spotify-circular, Helvetica, Arial, sans-serif;
+}
+
+nav {
+    height: 60px;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    width: 100%;
+}
+
+.spotify-logo {
+    width: 132px;
+    height: 41.88px;
+}
+
+footer {
+    height: 600px;
+    background-color: black;
+}
+
+.container {
+    position: static;
+    height: 100%;
+    display: flex;
+    margin: 0 auto;
+    padding: 0 15px;
+    max-width: 1170px;
+}
+
+.logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.container .nav-item {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+nav .nav-item ul {
+    list-style: none;
+    margin-right: 15px;
+}
+
+nav .nav-item a {
+    text-decoration: none;
+    font-weight: 700;
+    color: #fff;
+}
+
+section {
+    height: 800px;
+    background-color: #f037a5;
+    background: linear-gradient(#f037a5 -60%, #fae62d 140%);
+    background: -webkit-gradient( linear, left top, left bottom, color-stop(-60%, #f037a5), color-stop(140%, #fae62d));
+}
+
+.hero-img {
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url("https://www.scdn.co/i/home/hero-burst.svg");
+}
