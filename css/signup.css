@@ -9,8 +9,54 @@ nav .logo {
 .logo img {
     width: 197px;
     height: 59px;
-    padding: 1.5em 0;
+    margin-top: 10px;
 }
 
 
 /* DONE HEADER */
+
+
+/* BODY */
+
+body {
+    font-family: Circular, Helvetica, Arial, sans-serif;
+}
+
+section .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.button {
+    max-width: 320px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 14px;
+    line-height: 1;
+    border-radius: 500px;
+    padding: 16px 48px 18px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-align: center;
+    vertical-align: middle;
+}
+
+a {
+    text-decoration: none;
+}
+
+.button-facebook {
+    color: #FFF;
+    background-color: #3B5998;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+.seperator {}
+
+h2 {
+    font-size: 18px;
+}
