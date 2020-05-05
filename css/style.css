@@ -250,6 +250,7 @@ a:hover {
 .bottom-links ul {
     display: flex;
     padding-left: 0px;
+    width: 100%;
 }
 
 .bottom-links a {
@@ -258,11 +259,20 @@ a:hover {
     font-size: 12px;
 }
 
-.bottom-links .copyright {
+
+/* .bottom-links .copyright {
     color: #919496;
     display: flex;
     flex-direction: column;
-    margin-left: 523px;
     justify-content: center;
+    font-size: 12px;
+} */
+
+.copyright-container {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    color: #919496;
     font-size: 12px;
 }
